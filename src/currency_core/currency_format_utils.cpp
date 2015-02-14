@@ -1104,9 +1104,9 @@ namespace currency
   bool generate_genesis_block(block& bl)
   {
     //genesis block
-    /*bl = boost::value_initialized<block>();
+    bl = boost::value_initialized<block>();
     
-    account_public_address ac = boost::value_initialized<account_public_address>();
+    /*account_public_address ac = boost::value_initialized<account_public_address>();
     std::vector<size_t> sz;
     //proof 
 #ifndef TESTNET
