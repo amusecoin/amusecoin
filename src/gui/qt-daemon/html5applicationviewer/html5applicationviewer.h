@@ -42,7 +42,7 @@ public:
 protected:
 
   private slots :
-    bool do_close();
+  bool do_close();
   bool on_request_quit();
   public slots:
   void open_wallet();
@@ -56,6 +56,7 @@ protected:
   bool init_config();
   bool toggle_mining();
   void trayIconActivated(QSystemTrayIcon::ActivationReason reason);
+  QString get_exchange_last_top(const QString& params);
 
 private:
   void loadFile(const QString &fileName);

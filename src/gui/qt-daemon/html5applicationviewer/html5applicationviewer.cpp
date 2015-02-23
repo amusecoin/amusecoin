@@ -159,6 +159,10 @@ bool Html5ApplicationViewer::toggle_mining()
   m_backend.toggle_pos_mining();
   return true;
 }
+QString Html5ApplicationViewer::get_exchange_last_top(const QString& params)
+{
+  return QString();
+}
 bool Html5ApplicationViewer::store_config()
 {
   epee::serialization::store_t_to_json_file(m_config, m_backend.get_config_folder() + "/" + GUI_CONFIG_FILENAME);
