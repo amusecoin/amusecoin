@@ -93,7 +93,7 @@ namespace string_tools
     if (phomedir)
       return phomedir;
     else
-      return "";
+      return "~";
   }
   //----------------------------------------------------------------------------
 	inline bool get_guid_from_string(OUT boost::uuids::uuid& inetifer, const std::string& str_id)
