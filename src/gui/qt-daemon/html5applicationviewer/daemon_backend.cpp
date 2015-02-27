@@ -142,10 +142,10 @@ bool daemon_backend::start(int argc, char* argv[], view::i_view* pview_handler)
     log_dir = log_file_path.parent_path().string();
   }else
   {
-#if defined(MACOSX)
+#if defined(__APPLE__)
     //osx firewall issue
     log_dir = string_tools::get_user_home_dir();
-    log_dir += "Library/"CURRENCY_NAME;
+    log_dir += "/Library/Logs/" CURRENCY_NAME;
     boost::system::error_code ec;
     boost::filesystem::create_directories(log_dir, ec);
     if (!boost::filesystem::is_directory(log_dir, ec))

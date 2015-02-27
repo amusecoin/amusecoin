@@ -87,7 +87,7 @@ namespace string_tools
 	}
 	//----------------------------------------------------------------------------
   inline
-  std::string get_user_home_dir(std::string path)
+  std::string get_user_home_dir()
   {
     const char* phomedir = getenv("HOME");
     if (phomedir)
