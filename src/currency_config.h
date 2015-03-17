@@ -8,7 +8,7 @@
 #define CURRENCY_MAX_BLOCK_SIZE                       500000000  // block header blob limit, never used!
 #define CURRENCY_MAX_TX_SIZE                          1000000000
 #define CURRENCY_PUBLIC_ADDRESS_TEXTBLOB_VER          0
-#define CURRENCY_PUBLIC_ADDRESS_BASE58_PREFIX         99 // addresses start with 
+#define CURRENCY_PUBLIC_ADDRESS_BASE58_PREFIX         0x61 // addresses start with  a
 #define CURRENCY_MINED_MONEY_UNLOCK_WINDOW            10
 #define CURRENT_TRANSACTION_VERSION                   1
 #define CURRENT_BLOCK_MAJOR_VERSION                   1
@@ -105,7 +105,7 @@
 #define POS_SCAN_WINDOW                                 60*20 //seconds//(60*20) // 20 minutes
 #define POS_MIN_COINAGE                                 (60*60) // 1 hour
 #define POS_MAX_COINAGE                                 (60*60*24*90) // 90 days
-#define POS_STARTER_MODFIFIER                           "bd82e18d42a7ad239588b24fd356d63cc82717e1fae8f6a492cd25d62fda263f"
+#define POS_STARTER_MODFIFIER                           "a06w6gxk5tE0nxt6eas30Df6a711kD111a59m5v7984A507gyF4F1il97ry3ayku"
 #define POS_MODFIFIER_INTERVAL                          10
 #define POS_WALLET_MINING_SCAN_INTERVAL                 20  //seconds
 
@@ -114,8 +114,8 @@
 
 #define ALLOW_DEBUG_COMMANDS
 
-#define CURRENCY_NAME_BASE                              "Lui"
-#define CURRENCY_NAME_SHORT_BASE                        "lui"
+#define CURRENCY_NAME_BASE                              "AmuseCoin"
+#define CURRENCY_NAME_SHORT_BASE                        "ACO"
 #ifndef TESTNET
 #define CURRENCY_NAME                                   CURRENCY_NAME_BASE
 #define CURRENCY_NAME_SHORT                             CURRENCY_NAME_SHORT_BASE
